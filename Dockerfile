@@ -14,7 +14,9 @@ RUN \
     /usr/local/bin/docker-php-ext-install \
     dom \
     pcntl \
+    phar \
     posix
+    
 
 # Configure PHP
 # php module build deps
@@ -55,18 +57,20 @@ RUN \
 # http://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html
 RUN \
     /usr/local/bin/docker-php-ext-install \
-    bcmath \
-    calendar \
-    intl \
-    mcrypt \
-    sockets \
     pdo \
+    sockets \
     pdo_mysql \
     mysqli \
-    opcache \
-    xsl \
+    mbstring \
+    mcrypt \
+    hash \
     simplexml \
+    xsl \
     soap \
+    intl \
+    bcmath \
+    json \
+    opcache \
     zip
 
 
